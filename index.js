@@ -140,21 +140,28 @@ console.log(CompareNumber(10,20))
 //output: false
 
 
-//GreatorIndex
-function GreatorIndex(num1  , num2 )
+//GradeFinder
+function GradeFinder(num1)
 {
-  if(!isNaN(num1)  || !isNaN(num2))
+  if(isNaN(num1))
   {
-    console.warn('Enter valid values for GreatorIndex')
+    console.warn('Enter valid values for GradeFinder')
   }
   else
   {
-    return(num1.lastIndexOf(num2))
+    if(num1 >= 90)
+    return('S')
+    else if(num1 >= 80)
+    return('A')
+    else if(num1 >= 70)
+    return('B')
+    else if(num1 >= 60)
+    return('C')
   }
 }
 
-console.log(GreatorIndex('hello' , 'l'))
-//output: 3
+console.log('Congrats your grade is : '+`${GradeFinder(90)}`)
+//output: S
 
 
 //Vowels
