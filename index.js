@@ -157,6 +157,8 @@ function GradeFinder(num1)
     return('B')
     else if(num1 >= 60)
     return('C')
+    else
+    return('F')
   }
 }
 
